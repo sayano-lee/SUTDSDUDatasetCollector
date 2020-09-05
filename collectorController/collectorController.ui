@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>collectorControllerClass</class>
+ <widget class="QMainWindow" name="collectorControllerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Frame Capture Project</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="captureStart">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>730</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>开始捕获</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recordStart">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>730</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>开始录制</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recordStop">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>730</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>停止录制</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="singlePersonAction">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>590</y>
+      <width>150</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI Light</family>
+     </font>
+    </property>
+    <property name="currentText">
+     <string>喝水  0</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>喝水  0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>吃零食  1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>梳头  2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>掉东西  3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>捡东西  4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>扔东西  5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>坐下  6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>站起  7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>鼓掌  8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>读书  9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>写东西  10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>穿外套  11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>脱外套  12</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>戴眼镜  13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摘眼镜  14</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>戴帽子  15</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摘帽子  16</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>扔帽子  17</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>欢呼  18</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挥手  19</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>踢东西  20</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>伸进口袋  21</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>单腿跳  22</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>双腿跳  23</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打电话  24</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>玩手机  25</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>指向别处  26</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>看手表  27</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用双手擦  28</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>鞠躬  29</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摇头  30</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>敬礼  31</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>交叠手掌  32</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>双手交叠胸前示意停止  33</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>戴耳机  34</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摘耳机  35</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>嘘安静  36</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摸头发  37</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拇指向上  38</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拇指向下  39</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OK手势  40</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V手势  41</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挥拳  42</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打响指  43</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打开瓶子  44</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>闻味道  45</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>蹲下  46</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>在脸上涂  47</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>在手上涂  48</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拿起袋子  49</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>放下袋子  50</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>把东西装进袋子  51</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>把东西拿出袋子  52</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打开箱子  53</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>搬箱子  54</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>举起双手  55</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>叉腰  56</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>环抱双臂  57</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摇晃双臂  58</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>原地踏步  59</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>侧踢  60</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>后踢  61</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>咳嗽  62</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>喷嚏  63</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打哈欠  64</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>擤鼻涕  65</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>踉跄  66</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>头疼  67</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>胸闷  68</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>背疼  69</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>脖子疼  70</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>呕吐  71</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>扇扇子  72</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>伸展身体  73</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>丢垃圾  121</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挖坑  122</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>割草  123</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>放火  124</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>抽烟  125</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>砍树  126</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>钓鱼  127</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>破坏车锁  128</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>喷污建筑  129</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>扫地  136</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拖地  137</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拍篮球  138</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>投篮  139</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挥球拍  140</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>压腿  141</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>逃生  142</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>呼救  143</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>戴口罩  144</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>摘口罩  145</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>扔飞盘  149</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挑扁担  150</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用杠杆撬  151</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="doublePersonsAction">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>630</y>
+      <width>150</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI Light</family>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>拳打别人  74</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>脚踢别人  75</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>手推别人  76</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拍别人后背  77</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>指着别人  78</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拥抱别人  79</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>递给别人东西  80</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>从别人口袋偷东西  81</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>抢别人东西  82</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>握手  83</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>走向别人  84</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>远离别人  85</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用东西打人  86</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用刀威胁人 87</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>撞别人  88</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>并排走路  89</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>击掌  90</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>干杯喝酒  91</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>两人搬东西  92</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>给别人拍照  93</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>猫腰尾随别人  94</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>耳边低语  95</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>两人交换物品  96</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>搀扶  97</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>猜拳  98</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>胁持人质  130</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用枪指着  131</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>挥手告别  132</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>追逐  133</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>安慰  134</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>拉扯  135</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>勾肩搭背  146</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>持刀捅人  148</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSpinBox" name="uniqueIDSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>52</y>
+      <width>60</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="setupIDSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>52</y>
+      <width>60</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Unique ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Setup ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Replication</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="replicationSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>52</y>
+      <width>60</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="actionBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>560</y>
+      <width>320</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>动作列表</string>
+    </property>
+    <widget class="QRadioButton" name="singlePersonRadio">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>单人动作</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="doublePersonsRadio">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>多人动作</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="droneRadio">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>90</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指挥手势</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="debug">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>730</y>
+      <width>31</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="droneAction">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>670</y>
+      <width>150</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI Light</family>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>盘旋  99</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>降落  100</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>降落某处  101</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>前进  102</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>后退  103</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>向左飞  104</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>向右飞  105</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>上升  106</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>下降  107</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>加速  108</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>减速  109</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>向这边  110</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>停止  111</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>后退左转  112</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>后退右转  113</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>放弃降落  114</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>All Clear  115</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Not Clear   116</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Have Command  117</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>跟随  118</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>水平左转  119</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>水平右转  120</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="actorAttributeGrp">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>321</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>表演者1</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>120</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>上衣</string>
+     </property>
+     <widget class="QComboBox" name="upperClothingColorComboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>红色  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黑色  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>蓝色  3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>绿色  4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>花色  5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>灰色  6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>白色  7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黄色  8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>茶色  9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>紫色  10</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>粉色  11</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="upperClothingStyleComboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长袖  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>短袖  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>裙子  3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>120</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>裤子</string>
+     </property>
+     <widget class="QComboBox" name="lowerClothingColorComboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>红色  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黑色  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>蓝色  3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>绿色  4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>花色  5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>灰色  6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>白色  7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黄色  8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>茶色  9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>紫色  10</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>粉色  11</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="lowerClothingStyleComboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长裤  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>短裤  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>裙子  3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QComboBox" name="genderComboBox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>60</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>男  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>女  2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="backpackComboBox">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>红色  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黑色  2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>绿色  3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黄色  4</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="hatComboBox">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>红色  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黑色  2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黄色  3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>白色  4</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>35</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>性别</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>35</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>背包</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>35</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>帽子</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="preImage">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>52</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ink Free</family>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="text">
+     <string>Fisheye Camera 
+ No Signal</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="actorAttributeGrp_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>321</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>表演者2</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>120</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>上衣</string>
+     </property>
+     <widget class="QComboBox" name="upperClothingColorComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>红色  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黑色  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>蓝色  3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>绿色  4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>花色  5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>灰色  6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>白色  7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黄色  8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>茶色  9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>紫色  10</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>粉色  11</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="upperClothingStyleComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长袖  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>短袖  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>裙子  3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>120</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>裤子</string>
+     </property>
+     <widget class="QComboBox" name="lowerClothingColorComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>红色  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黑色  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>蓝色  3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>绿色  4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>花色  5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>灰色  6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>白色  7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黄色  8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>茶色  9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>紫色  10</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>粉色  11</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="lowerClothingStyleComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI Light</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>N/A  0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长裤  1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>短裤  2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>裙子  3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QComboBox" name="genderComboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>60</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>男  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>女  2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="backpackComboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>红色  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黑色  2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>绿色  3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黄色  4</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="hatComboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>N/A  0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>红色  1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黑色  2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>黄色  3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>白色  4</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>35</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>性别</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>35</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>背包</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>35</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>帽子</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="startFisheyePreview">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>380</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>lock</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopFisheyePreview">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>380</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>release</string>
+    </property>
+   </widget>
+   <zorder>actionBox</zorder>
+   <zorder>captureStart</zorder>
+   <zorder>recordStart</zorder>
+   <zorder>recordStop</zorder>
+   <zorder>singlePersonAction</zorder>
+   <zorder>doublePersonsAction</zorder>
+   <zorder>uniqueIDSpinBox</zorder>
+   <zorder>setupIDSpinBox</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_6</zorder>
+   <zorder>replicationSpinBox</zorder>
+   <zorder>debug</zorder>
+   <zorder>droneAction</zorder>
+   <zorder>actorAttributeGrp</zorder>
+   <zorder>preImage</zorder>
+   <zorder>actorAttributeGrp_2</zorder>
+   <zorder>startFisheyePreview</zorder>
+   <zorder>stopFisheyePreview</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action1">
+   <property name="text">
+    <string>1</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>uniqueIDSpinBox</tabstop>
+  <tabstop>setupIDSpinBox</tabstop>
+  <tabstop>replicationSpinBox</tabstop>
+  <tabstop>genderComboBox</tabstop>
+  <tabstop>backpackComboBox</tabstop>
+  <tabstop>hatComboBox</tabstop>
+  <tabstop>upperClothingColorComboBox</tabstop>
+  <tabstop>upperClothingStyleComboBox</tabstop>
+  <tabstop>lowerClothingColorComboBox</tabstop>
+  <tabstop>lowerClothingStyleComboBox</tabstop>
+  <tabstop>singlePersonAction</tabstop>
+  <tabstop>doublePersonsAction</tabstop>
+  <tabstop>droneAction</tabstop>
+  <tabstop>captureStart</tabstop>
+  <tabstop>recordStart</tabstop>
+  <tabstop>recordStop</tabstop>
+  <tabstop>debug</tabstop>
+  <tabstop>droneRadio</tabstop>
+  <tabstop>doublePersonsRadio</tabstop>
+  <tabstop>singlePersonRadio</tabstop>
+ </tabstops>
+ <resources>
+  <include location="collectorController.qrc"/>
+ </resources>
+ <connections/>
+</ui>
