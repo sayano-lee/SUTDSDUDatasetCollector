@@ -1,5 +1,3 @@
-#pragma once
-
 #include <QtWidgets/QMainWindow>
 #include "ui_collectorController.h"
 //#include "eyefishWorker.h"
